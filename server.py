@@ -16,9 +16,8 @@ app.jinja_env.undefined = StrictUndefined
 @app.route("/")
 def index():
     """Homepage."""
-    list_of_available_lines = gets_a_list_of_available_line()
 
-    return render_template("homepage.html", list_of_available_lines=list_of_available_lines)
+    return render_template("homepage.html")
 
 
 if __name__ == "__main__":
